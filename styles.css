@@ -2,7 +2,6 @@
 :root{
   --brand:#1f7a4a;
   --brand-dark:#145c38;
-  --bg:#ffffff;
   --bg-soft:#f5faf7;
   --text:#1f2328;
   --muted:#4b5563;
@@ -11,14 +10,13 @@
 }
 
 *{box-sizing:border-box}
-
 html,body{margin:0;padding:0}
 
 body{
   font-family:Arial,sans-serif;
   line-height:1.7;
   color:var(--text);
-  background:linear-gradient(180deg,#fff 0%,var(--bg-soft) 100%)
+  background:linear-gradient(180deg,#fff 0%,var(--bg-soft) 100%);
 }
 
 a{color:var(--brand);text-decoration:none}
@@ -29,7 +27,7 @@ a:hover{color:var(--brand-dark)}
   top:0;
   z-index:1000;
   background:rgba(255,255,255,.95);
-  border-bottom:1px solid var(--border)
+  border-bottom:1px solid var(--border);
 }
 
 .header-inner{
@@ -39,7 +37,7 @@ a:hover{color:var(--brand-dark)}
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:16px
+  gap:16px;
 }
 
 .brand{
@@ -47,15 +45,16 @@ a:hover{color:var(--brand-dark)}
   align-items:center;
   gap:12px;
   font-weight:800;
-  color:var(--brand)
+  color:var(--brand);
 }
 
-.brand img{height:40px;width:auto}
+.brand img{height:40px;width:auto;display:block}
+.brand span{display:inline-block}
 
 .nav a{
   padding:8px 10px;
   border-radius:10px;
-  font-weight:700
+  font-weight:700;
 }
 
 .nav a:hover{background:rgba(31,122,74,.08)}
@@ -63,7 +62,7 @@ a:hover{color:var(--brand-dark)}
 .container{
   max-width:900px;
   margin:34px auto 60px;
-  padding:0 18px
+  padding:0 18px;
 }
 
 .section{
@@ -72,10 +71,12 @@ a:hover{color:var(--brand-dark)}
   border-radius:18px;
   padding:18px 22px;
   margin-top:26px;
-  box-shadow:var(--shadow)
+  box-shadow:var(--shadow);
 }
 
 .section h1,.section h2{color:var(--brand)}
+
+.list{padding-left:18px}
 
 .cta{
   display:inline-block;
@@ -84,7 +85,7 @@ a:hover{color:var(--brand-dark)}
   border-radius:12px;
   background:var(--brand);
   color:#fff;
-  font-weight:800
+  font-weight:800;
 }
 
 .cta:hover{background:var(--brand-dark)}
@@ -93,5 +94,5 @@ a:hover{color:var(--brand-dark)}
   margin-top:26px;
   text-align:center;
   color:var(--muted);
-  font-size:.95rem
+  font-size:.95rem;
 }
