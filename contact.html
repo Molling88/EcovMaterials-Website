@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <title>Contact EcoV</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -14,27 +13,19 @@
       color: #222;
       padding: 0 16px;
     }
-
-    h1 {
-      color: #1f7a4a;
-    }
-
+    h1 { color: #1f7a4a; }
     nav {
       margin-bottom: 30px;
       padding-bottom: 10px;
       border-bottom: 1px solid #ddd;
     }
-
     nav a {
       margin-right: 15px;
       text-decoration: none;
       color: #1f7a4a;
       font-weight: bold;
     }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
+    nav a:hover { text-decoration: underline; }
 
     .contact-box {
       margin-top: 20px;
@@ -43,20 +34,17 @@
       border-left: 4px solid #1f7a4a;
     }
 
-    label {
-      display: block;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-
+    label { display: block; margin-top: 10px; font-weight: bold; }
     input, textarea {
       width: 100%;
       padding: 10px;
       margin-top: 5px;
       border: 1px solid #ccc;
       border-radius: 5px;
+      box-sizing: border-box;
+      font-family: inherit;
+      font-size: 16px;
     }
-
     button {
       margin-top: 15px;
       background: #1f7a4a;
@@ -65,63 +53,55 @@
       padding: 10px 15px;
       border-radius: 5px;
       cursor: pointer;
+      font-weight: bold;
     }
-
-    button:hover {
-      background: #155c35;
-    }
+    button:hover { background: #155c35; }
   </style>
 </head>
 
 <body>
-
   <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="what-we-do.html">What We Do</a>
-  <a href="contact.html">Contact</a>
-</nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="what-we-do.html">What We Do</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
   <h1>Contact EcoV</h1>
-
   <p>
     We welcome conversations related to responsible recovery, circular sourcing,
     research collaboration, and partnership opportunities.
   </p>
 
   <div class="contact-box">
+    <h2 style="margin:0 0 10px; color:#1f7a4a;">Send us a message</h2>
 
     <form action="https://api.web3forms.com/submit" method="POST">
-
-
       <input type="hidden" name="access_key" value="27eeb4ab-bcac-48d5-b1e6-f105535b25b8">
 
       <!-- Spam protection -->
       <input type="checkbox" name="botcheck" style="display:none">
 
-      <label>Name</label>
-      <input type="text" name="name" required>
+      <label for="name">Name</label>
+      <input id="name" type="text" name="name" required>
 
-      <label>Email</label>
-      <input type="email" name="email" required>
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" required>
 
-      <label>Message</label>
-      <textarea name="message" rows="5" required></textarea>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
       <button type="submit">Send Message</button>
-
     </form>
 
     <p style="margin-top:15px;">
       Prefer email?
-<a href="mailto:info@ecovmaterials.com">info@ecovmaterials.com</a>
+      <a href="mailto:info@ecovmaterials.com">info@ecovmaterials.com</a>
     </p>
-
   </div>
 
   <p>
     We aim to respond to all inquiries as efficiently as possible.
   </p>
-
 </body>
 </html>
